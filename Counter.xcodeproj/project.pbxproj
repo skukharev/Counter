@@ -26,8 +26,6 @@
 		073A5F212B8B1DE5003217FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		073A5F242B8B1DE5003217FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		073A5F262B8B1DE5003217FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		073A5F2C2B8B2591003217FE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
-		073A5F2D2B8B2591003217FE /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		073CDB932B8B58A900FB5CA0 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		078DDFF72B8B878F00913507 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +63,8 @@
 				073A5F182B8B1DE3003217FE /* AppDelegate.swift */,
 				073A5F1A2B8B1DE3003217FE /* SceneDelegate.swift */,
 				073A5F2E2B8B26E6003217FE /* Helpers */,
-				073A5F2F2B8B26EE003217FE /* Models */,
 				073A5F302B8B26F4003217FE /* Presentation */,
 				073A5F312B8B26FD003217FE /* Resources */,
-				073A5F322B8B2707003217FE /* Services */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -80,13 +76,6 @@
 				078DDFF72B8B878F00913507 /* Int+Extensions.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		073A5F2F2B8B26EE003217FE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		073A5F302B8B26F4003217FE /* Presentation */ = {
@@ -106,13 +95,6 @@
 				073A5F262B8B1DE5003217FE /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		073A5F322B8B2707003217FE /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +184,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				073A5F1F2B8B1DE3003217FE /* Base */,
-				073A5F2C2B8B2591003217FE /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -211,7 +192,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				073A5F242B8B1DE5003217FE /* Base */,
-				073A5F2D2B8B2591003217FE /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

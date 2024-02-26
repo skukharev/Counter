@@ -7,17 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var clearCounterButton: UIButton!;
-    @IBOutlet weak var historyOfChangesTextView: UITextView!;
-    @IBOutlet weak var counterLabel: UILabel!;
-    @IBOutlet weak var incrementCounterButton: UIButton!;
-    @IBOutlet weak var decrementCounterButton: UIButton!;
+final class ViewController: UIViewController {
+    @IBOutlet private weak var clearCounterButton: UIButton!;
+    @IBOutlet private weak var historyOfChangesTextView: UITextView!;
+    @IBOutlet private weak var counterLabel: UILabel!;
+    @IBOutlet private weak var incrementCounterButton: UIButton!;
+    @IBOutlet private weak var decrementCounterButton: UIButton!;
 
     private var internalCounter: Int = 0;
     let emptyValue: Int = -100;
     
-    var applicationCounter: Int {
+    private var applicationCounter: Int {
         get {
             return internalCounter;
         }
@@ -54,23 +54,23 @@ class ViewController: UIViewController {
         incrementCounterButton.imageView?.layer.transform = CATransform3DMakeScale(5.0, 5.0, 5.0);
     }
     
-    @IBAction func clearCounterButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func clearCounterButtonTouchUpInside(_ sender: Any) {
         applicationCounter = emptyValue;
         addToHistoryOfChanges(text: ": значение сброшено");
    }
     
-    @IBAction func incrementCounterTouchUpInside(_ sender: Any) {
+    @IBAction private func incrementCounterTouchUpInside(_ sender: Any) {
         applicationCounter += 1;
         
         let impactHeavy = UIImpactFeedbackGenerator(style: .light);
         impactHeavy.impactOccurred();
     }
     
-    @IBAction func decrementCounterButtonTouchUpInside(_ sender: Any) {
+    @IBAction private func decrementCounterButtonTouchUpInside(_ sender: Any) {
         applicationCounter -= 1;
     }
     
-    func addToHistoryOfChanges(text: String) {
+    private func addToHistoryOfChanges(text: String) {
         let date = Date();
         historyOfChangesTextView.text += date.dateTimeString + text + "\n";
         //Скроллинг текстового списка к последней строке
